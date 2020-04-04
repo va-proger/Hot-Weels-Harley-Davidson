@@ -1,9 +1,11 @@
 
 $(document).ready(function(){
     // nav menu
-    document.querySelector('.menu-icon-wrapper').onclick = function(){
-        document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
-    };
+    // const menuToggle = document.querySelector('#menu-toggle');
+    // menuToggle.onclick = function(){
+    //     menuToggle.classList.toggle('menu-icon-active');
+    // }
+    
     // Owl Corousel
     $(".owl-carousel").owlCarousel({
         items:1
@@ -23,5 +25,11 @@ $(document).ready(function(){
         $('html, body').animate({ scrollTop: 0 }, 360);
         return false;
     })
-    var mixer = mixitup('.products__row');
+    var mixer = mixitup('.productsItems');
+    function toggle(){
+        var sec = document.getElementById('sec');
+        var nav = document.getElementById('navigation');
+        sec.classList.toggle('active');
+        nav.classList.toggle('active');
+    }
 });
