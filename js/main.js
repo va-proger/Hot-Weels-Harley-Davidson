@@ -18,11 +18,10 @@ $(document).ready(function(){
         } else {
             scrollBtn.fadeOut();
         }
-    });
+    })
     scrollBtn.click(function(){
         $('html, body').animate({ scrollTop: 0 }, 360);
         return false;
-    });
-    let productsRow = document.querySelector('.pictore');
-    let mixer = mixitup('.pictore');
+    })
+    var mixer = mixitup('.products__row');
 });
